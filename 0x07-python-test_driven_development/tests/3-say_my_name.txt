@@ -1,0 +1,56 @@
+===================================================
+Tests for text_indentation in 0-add_integer.py
+===================================================
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+>>> say_my_name("Sunmola", "Idris")
+My name is Sunmola Idris
+
+>>> say_my_name("alx", 4)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my_name("Sunmola", None)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my_name("Sunmola", {})
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my_name("Sunmola", 8)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my_name([], "Idris")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name(8, "Idris")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name([[1, 2, 3], [4, 5, 6], [7, 8, 9]], "Idris")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name("alx", 69)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my_name("alx", 1)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my_name(None, "Idris")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name([1, 2, 3], "Idris")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name()
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
